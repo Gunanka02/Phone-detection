@@ -2,10 +2,10 @@ import cv2
 import numpy as np
 
 # Load YOLO model
-net = cv2.dnn.readNet(r"C:\Users\CDAC\Downloads\yolov3.weights", r"C:\Users\CDAC\Downloads\yolov3.cfg")
+net = cv2.dnn.readNet(r"C:\Users\MyFolder\Downloads\yolov3.weights", r"C:\Users\MyFolder\Downloads\yolov3.cfg")
 
 # Load class labels (COCO dataset)
-with open(r"C:\Users\CDAC\Downloads\coco.names", "r") as f:
+with open(r"C:\Users\MyFolder\Downloads\coco.names", "r") as f:
     classes = [line.strip() for line in f.readlines()]
 
 # Get YOLO output layer names
